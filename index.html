@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Delights Bakery</title>
+    <style>
+        body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #fdf6e3, #f7e1b5);
+      transition: background 0.5s ease;
+      color: #4a3728;
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Sweet Delights Bakery</h1>
+        <button class="theme-btn" onclick="changeTheme('linear-gradient(135deg, #fdf6e3, #f7e1b5)')">Warm Cream</button>
+        <button class="theme-btn" onclick="changeTheme('linear-gradient(135deg, #f8c1b8, #f7d7c5)')">Peach Bliss</button>
+        <button class="theme-btn" onclick="changeTheme('linear-gradient(135deg, #e8d8c4, #d9c2a6)')">Toffee Glow</button>
+        <div class="cupcake" onclick="triggerAnimation()"></div>
+        <p>Click the cupcake to make it bounce!</p>
+      </div>
 </body>
 </html>

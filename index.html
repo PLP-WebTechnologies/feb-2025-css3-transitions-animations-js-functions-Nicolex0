@@ -118,6 +118,18 @@
         document.body.style.background = savedTheme;
       }
     };
+
+    function changeTheme(theme) {
+      document.body.style.background = theme; // Update background
+      localStorage.setItem('backgroundTheme', theme); // Save to local storage
+    }
+    // Function to trigger CSS animation
+    function triggerAnimation() {
+      const cupcake = document.querySelector('.cupcake');
+      cupcake.classList.remove('animate'); // Reset animation
+      void cupcake.offsetWidth; // Trigger reflow
+      cupcake.classList.add('animate'); // Start animation
+    }
       </script>
 </body>
 </html>

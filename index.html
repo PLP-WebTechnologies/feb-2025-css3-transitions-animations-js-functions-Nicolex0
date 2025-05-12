@@ -46,6 +46,33 @@
       position: relative;
       overflow: hidden;
     }
+    .theme-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(212, 163, 115, 0.6);
+      background: linear-gradient(45deg, #e6c4a1, #d4a373);
+    }
+
+    .cupcake {
+      width: 80px;
+      height: 80px;
+      background: #f8c1b8;
+      position: relative;
+      margin: 30px auto;
+      cursor: pointer;
+      border-radius: 50% 50% 0 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .cupcake::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 80px;
+      height: 30px;
+      background: #8b5e3c;
+      border-radius: 10px;
+    }
     </style>
 </head>
 <body>

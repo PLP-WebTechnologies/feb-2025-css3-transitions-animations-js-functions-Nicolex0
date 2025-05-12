@@ -110,5 +110,14 @@
         <div class="cupcake" onclick="triggerAnimation()"></div>
         <p>Click the cupcake to make it bounce!</p>
       </div>
+
+      <script>
+        window.onload = function() {
+      const savedTheme = localStorage.getItem('backgroundTheme');
+      if (savedTheme) {
+        document.body.style.background = savedTheme;
+      }
+    };
+      </script>
 </body>
 </html>
